@@ -179,7 +179,7 @@ call s:h("Title",         {"fg": s:dark_blue})
 call s:h("Visual",        {"bg": s:visual})
 call s:h("WarningMsg",    {"fg": s:yellow})
 call s:h("WildMenu",      {"fg": s:bg_subtle, "bg": s:cyan})
-call s:h("Folded",        {"bg": s:purple, "fg": s:bg_subtle})
+call s:h("Folded",        {"fg": s:purple})
 call s:h("FoldColumn",    {"fg": s:yellow})
 call s:h("DiffAdd",       {"fg": s:green})
 call s:h("DiffDelete",    {"fg": s:red})
@@ -323,6 +323,8 @@ call s:h("GitGutterDelete",{"fg": s:red, "bg": s:bg_subtle})
 call s:h("GitGutterChange",{"fg": s:yellow, "bg": s:bg_subtle})
 call s:h("GitGutterChangeDelete",{"fg": s:red, "bg": s:bg_subtle})
 
+" Coc
+call s:h("CocInlayHint", {"fg": s:medium_gray, "gui": "italic", "cterm": "italic"})
 
 "nvim terminal colors
 let g:terminal_color_0 = s:bg_dark.gui
